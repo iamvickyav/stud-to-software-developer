@@ -71,3 +71,37 @@
 
 </html>
 ```
+
+**Basic sample with CSS in separate file**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Refer CSS/Javascript/Icons -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Design -->
+    <h1 class="heading-style">Welcome to the session</h1>
+    <h2> This is our second session </h2>
+
+    <h1 class="heading-style"> Topics for today </h1>
+
+    <h1 class="heading-style">Post Session Links</h1>
+
+    <a href="contact.html">Contact Details can be found here</a>
+</body>
+
+</html>
+```
+
+```css
+.heading-style {
+  color: green;
+  font-size: 80px;
+  background-color: pink;
+}
+```
