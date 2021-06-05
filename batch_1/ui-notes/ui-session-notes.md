@@ -105,3 +105,68 @@
   background-color: pink;
 }
 ```
+
+**Create Javascript to change value in document**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Refer CSS/Javascript/Icons -->
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function increment() {
+            var currentCount = parseInt(document.getElementById("result").innerHTML);
+            currentCount = currentCount + 1;
+            document.getElementById("result").innerHTML = currentCount;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Design -->
+    <h1 class="heading-style">Welcome to the session</h1>
+
+    <h2>Click Counter Sample</h2>
+    <button onclick="increment()">Click me</button>
+    <h2>You have clicked : </h2>
+    <h2 id="result">0</h2>
+</body>
+
+</html>
+```
+
+**Javascript in separate file**
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Refer CSS/Javascript/Icons -->
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js">
+    </script>
+</head>
+
+<body>
+    <!-- Design -->
+    <h1 class="heading-style">Welcome to the session</h1>
+
+    <h2>Click Counter Sample</h2>
+    <button onclick="increment()">Click me</button>
+    <h2>You have clicked : </h2>
+    <h2 id="result">0</h2>
+</body>
+
+</html>
+```
+
+```js
+function increment() {
+    var currentCount = parseInt(document.getElementById("result").innerHTML);
+    currentCount = currentCount + 1;
+    document.getElementById("result").innerHTML = currentCount;
+}
+```
