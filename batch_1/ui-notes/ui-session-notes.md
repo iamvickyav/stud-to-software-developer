@@ -202,3 +202,75 @@ function increment() {
 </head>
 ```
 
+## How Bootstrap behaves
+
+* It segregate the webpage into 12 equal halves
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- For Reference, use https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Slim version breaks AJAX Calls-->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/icon.svg" alt="" width="45" height="40" class="d-inline-block align-text-top">
+                Shopper's Stop
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="height:100px">
+            <div class="col" style="background-color: orange;">
+                RAVI
+            </div>
+            <div class="col" style="background-color: red;">
+                1
+            </div>
+            <div class="col" style="background-color: aqua;">
+                2
+            </div>
+            <div class="col" style="background-color: brown;">
+                6
+            </div>
+            <div class="col" style="background-color: orange;">
+                RAVI
+            </div>
+        </div>
+        <div class="row" style="height:200px">
+            <div class="col" style="background-color: green;">
+                3
+            </div>
+            <div class="col" style="background-color: yellow;">
+                4
+            </div>
+            <div class="col" style="background-color: pink;">
+                5
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+```
