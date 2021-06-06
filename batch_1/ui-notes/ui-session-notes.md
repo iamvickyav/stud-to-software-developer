@@ -277,7 +277,7 @@ function increment() {
 
 ## Design Diagram of single element
 
-<a href="https://ibb.co/HCnDZPr target="_blank">Design can be viewed here</a>
+<a href="https://ibb.co/HCnDZPr" target="_blank">Design can be viewed here</a>
                                            
 
 ## Design of single element 
