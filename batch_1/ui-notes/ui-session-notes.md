@@ -351,6 +351,8 @@ function increment() {
 
 ## Static Design Final
 
+<a href="https://ibb.co/1mcJXky">Design of multiple elements can be viewed here</a>
+
 ```html
 <!DOCTYPE html>
 <html>
