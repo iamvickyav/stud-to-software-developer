@@ -65,3 +65,12 @@ $.each(eletronicItems, function(index, electionicItem) {
 
 });
 ```
+
+### Logging in Console
+
+```js
+console.log("Hello")
+```
+
+In webpage, right click -> inspect -> console tab 
+
