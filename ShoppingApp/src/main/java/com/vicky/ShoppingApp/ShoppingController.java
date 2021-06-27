@@ -1,5 +1,6 @@
 package com.vicky.ShoppingApp;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +10,9 @@ import java.util.List;
 
 @RestController
 public class ShoppingController {
+
+    @Autowired
+    ShoppingService shoppingService;
 
     // http://localhost:8080/shopping
     @RequestMapping("/shopping")
@@ -39,11 +43,17 @@ public class ShoppingController {
         product2.setRating("4.3");
         product2.setReviews("11,344");
 
-
         List<Product> products = new ArrayList<>();
         products.add(product1);
         products.add(product2);
 
+        return products;
+    }
+
+    @CrossOrigin
+    @RequestMapping("/productsfromDB")
+    public List<Product> getProductsFromDB() {
+        List<Product> products = shoppingService.getProductFromDatabase();
         return products;
     }
 }
